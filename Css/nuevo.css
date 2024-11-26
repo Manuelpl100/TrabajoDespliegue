@@ -215,3 +215,60 @@ h2 {
         transform: translateY(0);
     }
 }
+
+
+/* Estilos para la sección de medios (audio y video) */
+.media-section {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.media-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.media-section p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Estilo para el audio */
+audio {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 15px;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el video */
+video {
+    width: 80%;
+    max-width: 640px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el hover del video */
+video:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    audio, video {
+        width: 95%;
+    }
+}
