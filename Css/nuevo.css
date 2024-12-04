@@ -161,6 +161,8 @@ h2 {
 }
 
 
+
+
 /* Slider de imágenes */
 .slider {
     width: 100%;
@@ -215,7 +217,6 @@ h2 {
         transform: translateY(0);
     }
 }
-
 
 /* Estilos para la sección de medios (audio y video) */
 .media-section {
