@@ -4,71 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito - Carworld</title>
-    <link rel="stylesheet" href="../Css/Carrito.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-
-        <nav class="navbar">
-            <div class="logo">CARWORLD</div>
-            <ul class="nav-links">
-                <li><a href="../Index.html">Inicio</a></li>
-                <li><a href="../Html/Registro.html">Registro</a></li>
-                <li><a href="../Html/Modelos.html">Modelos</a></li>
-                <li><a href="../Html/SobreNosotros.html">Sobre Nosotros</a></li>
-                <li><a href="../Html/Carrito.html">Carrito</a></li>
-                <li><a href="../Html/InicioSesion.html">Iniciar Sesion</a></li>
-            </ul>
-        </nav>
-
-    <main class="cart-section" id="cart">
-        <h2>Carrito de Compras</h2>
-        <div class="cart-grid">
-            <div class="cart-item">
-                <img src="/Imagenes/AudiA3.png" alt="Coche 1">
-                <div class="item-details">
-                    <h3>Modelo A</h3>
-                    <p>Color: Rojo</p>
-                    <p>Precio: 26.999€</p>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img src="/Imagenes/audiq8.png" alt="Coche 2">
-                <div class="item-details">
-                    <h3>Modelo B</h3>
-                    <p>Color: Azul</p>
-                    <p>Precio: 166.650€</p>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CARWORLD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/Modelos.html">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Html/Eventos.html">Eventos y Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/Carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/Registro.html">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/SobreNosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/InicioSesion.html">Iniciar Sesión</a></li>
+                </ul>
             </div>
         </div>
-       
-        <div class="cart-summary">
-            <h3>Resumen del Pedido</h3>
-            <p>Subtotal: 193.649€</p>
-            <p>Impuestos: $5,500</p>
-            <p>Total: 198.649€</p>
-            <a href="#" class="btn btn-primary">Proceder al Pago</a>
+    </nav>
+
+    <main class="container my-5">
+        <h2 class="mb-4">Carrito de Compras</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="/Imagenes/AudiA3.png" alt="Coche 1" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="card-title">Modelo A</h5>
+                                <p class="card-text">Color: Rojo</p>
+                                <p class="card-text">Precio: 26.999€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="/Imagenes/audiq8.png" alt="Coche 2" class="img-fluid">
+                            </div>
+                            <div class="col-md-9">
+                                <h5 class="card-title">Modelo B</h5>
+                                <p class="card-text">Color: Azul</p>
+                                <p class="card-text">Precio: 166.650€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Resumen del Pedido</h3>
+                        <p class="card-text">Subtotal: 193.649€</p>
+                        <p class="card-text">Impuestos: 5.000€</p>
+                        <hr>
+                        <h4 class="card-text">Total: 198.649€</h4>
+                        <a href="#" class="btn btn-primary w-100 mt-3">Proceder al Pago</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-
-    <footer id="contact" class="footer">
-        <div class="footer-content">
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
             <p>Contacta con nosotros: carworld@carworld.com | +34 610 32 54 53</p>
             <p>2024 CARWORLD. Todos los derechos reservados.</p>
+            <div class="mt-3">
+                <a href="https://www.instagram.com/" class="me-2">
+                    <img src="/Imagenes/Instagram.jpeg" width="35" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/" class="me-2">
+                    <img src="/Imagenes/Facebook.png" width="35" alt="Facebook">
+                </a>
+                <a href="https://x.com/">
+                    <img src="/Imagenes/X.png" width="35" alt="X">
+                </a>
+            </div>
         </div>
-
-        <div class="social-icons">
-            <a href="https://www.instagram.com/">
-                <img src="/Imagenes/Instagram.jpeg" width="35">
-            </a>
-            <a href="https://www.facebook.com/">
-                <img src="/Imagenes/Facebook.png" width="35">
-            </a>
-            <a href="https://x.com/">
-                <img src="/Imagenes/X.png" width="35">
-            </a>                
-        </div>
-
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

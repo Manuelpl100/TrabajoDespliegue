@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos y Promociones - Carworld</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        .event-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CARWORLD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/Modelos.html">Modelos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Html/Eventos.html">Eventos y Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/Carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/Registro.html">Registro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/SobreNosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Html/InicioSesion.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Eventos y Promociones Especiales</h1>
+
+        <section class="mb-5">
+            <h2 class="mb-4">Próximos Eventos</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 event-card">
+                        <img src="/Imagenes/cochefuturo.jpg" class="card-img-top" alt="Lanzamiento Nuevo Modelo">
+                        <div class="card-body">
+                            <h5 class="card-title">Lanzamiento Nuevo Modelo</h5>
+                            <p class="card-text">Sé el primero en ver nuestro nuevo modelo deportivo. ¡Evento exclusivo con demostraciones en vivo!</p>
+                            <p class="card-text"><small class="text-muted">15 de Julio, 2024</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 event-card">
+                        <img src="/Imagenes/KiaCeed.png" class="card-img-top" alt="Día de Prueba de Manejo">
+                        <div class="card-body">
+                            <h5 class="card-title">Día de Prueba de Manejo</h5>
+                            <p class="card-text">Ven y prueba nuestra gama completa de vehículos. Expertos disponibles para responder todas tus preguntas.</p>
+                            <p class="card-text"><small class="text-muted">5 de Agosto, 2024</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Reservar Prueba</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 event-card">
+                        <img src="/Imagenes/clasico.png" class="card-img-top" alt="Exposición de Clásicos">
+                        <div class="card-body">
+                            <h5 class="card-title">Exposición de Clásicos</h5>
+                            <p class="card-text">Admira nuestra colección de coches clásicos restaurados. Una jornada para los amantes de la historia automotriz.</p>
+                            <p class="card-text"><small class="text-muted">20 de Septiembre, 2024</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Comprar Entradas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4">Promociones Especiales</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Financiación al 0% de interés</h5>
+                            <p class="card-text">Aprovecha nuestra promoción de financiación sin intereses en modelos seleccionados. ¡Oferta por tiempo limitado!</p>
+                            <a href="#" class="btn btn-success">Ver Modelos Elegibles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Plan Renove</h5>
+                            <p class="card-text">Cambia tu coche antiguo por uno nuevo y obtén hasta 3.000€ de descuento adicional. Consulta condiciones.</p>
+                            <a href="#" class="btn btn-success">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p>Contacta con nosotros: carworld@carworld.com | +34 610 32 54 53</p>
+            <p>2024 CARWORLD. Todos los derechos reservados.</p>
+            <div class="mt-3">
+                <a href="https://www.instagram.com/" class="me-2">
+                    <img src="/Imagenes/Instagram.jpeg" width="35" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/" class="me-2">
+                    <img src="/Imagenes/Facebook.png" width="35" alt="Facebook">
+                </a>
+                <a href="https://x.com/">
+                    <img src="/Imagenes/X.png" width="35" alt="X">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
